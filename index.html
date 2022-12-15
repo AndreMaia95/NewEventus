@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    /* ----------- Navigation ----------- */
+    <!------------- Navigation ------------->
     <nav>
       <div class="container">
         <h2 class="log">Eventus</h2>
@@ -28,10 +28,10 @@
         </div>
       </div>
     </nav>
-    /* ----------- Main ----------- */
+    <!------------- Main ------------->
     <main>
       <div class="container">
-        /* ----------- Left ----------- */
+        <!------------- Left ------------->
         <div class="left">
           <a class="profile">
             <div class="profile-photo">
@@ -42,31 +42,106 @@
               <p class="text-muted">@JohnDoe</p>
             </div>
           </a>
-          /* ----------- SideBar ----------- */
+          <!------------- SideBar ------------->
           <div class="sidebar">
-            <a class="menu-item">
+            <a class="menu-item active">
               <span><i class="uil uil-home"></i></span>
               <h3>Home</h3>
-              <span><i class="uil uil-home"></i></span>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-compass"></i></span>
               <h3>Explore</h3>
-              <span><i class="uil uil-home"></i></span>
+            </a>
+            <a class="menu-item" id="notifications">
+              <span
+                ><i class="uil uil-bell"
+                  ><small class="notification-count">9+</small></i
+                ></span
+              >
               <h3>Notifications</h3>
-              <span><i class="uil uil-home"></i></span>
+              <!------------- Notification PopUp ------------->
+              <div class="notifications-popup">
+                <div>
+                  <div class="profile-photo">
+                    <img src="https://picsum.photos/200" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Keke Benjamin</b> accepted your friend request
+                    <small class="text-muted">2 Days Ago.</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="https://picsum.photos/200" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Hana Russ</b> commented on your post
+                    <small class="text-muted">4 Days Ago.</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="https://picsum.photos/200" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Dana White</b> like your post
+                    <small class="text-muted">1 Hour Ago.</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="https://picsum.photos/200" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Maria Oppong</b> commented on your post
+                    <small class="text-muted">2 Hours Ago.</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-photo">
+                    <img src="https://picsum.photos/200" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Donald Trump</b> commented on your post
+                    <small class="text-muted">3 Hours Ago.</small>
+                  </div>
+                </div>
+              </div>
+              <!------------- End Notification PopUp ------------->
+            </a>
+            <a class="menu-item" id="messages-notifications">
+              <span
+                ><i class="uil uil-envelope-alt"
+                  ><small class="notification-count">6</small></i
+                ></span
+              >
               <h3>Message</h3>
-              <span><i class="uil uil-home"></i></span>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-bookmark"></i></span>
               <h3>Bookmarks</h3>
-              <span><i class="uil uil-home"></i></span>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-chart-line"></i></span>
               <h3>Analytics</h3>
-              <span><i class="uil uil-home"></i></span>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-pallete"></i></span>
               <h3>Theme</h3>
-              <span><i class="uil uil-home"></i></span>
+            </a>
+            <a class="menu-item">
+              <span><i class="uil uil-setting"></i></span>
               <h3>Settings</h3>
             </a>
           </div>
+          <!------------- End SideBar ------------->
+          <label for="create-post" class="btn btn-primary">Create Post</label>
         </div>
-        /* ----------- Middle ----------- */
+        <!------------- End Left ------------->
+
+        <!------------- Middle ------------->
         <div class="middle"></div>
-        /* ----------- Right ----------- */
+        <!------------- Right ------------->
         <div class="right"></div>
       </div>
     </main>
