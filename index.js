@@ -1,4 +1,11 @@
-const menuItems = document.querySelectorA11(".menu-item");
+//Sidebar
+const menuItems = document.querySelectorAll(".menu-item");
+
+// Messages
+const messagesNotification = document.querySelector("#messages-notifications");
+const messages = document.querySelector(".messages");
+
+// ========== SIDEBAR ==========
 // remove active class from all menu items
 const changeActiveItem = () => {
   menuItems.forEach((item) => {
@@ -19,4 +26,14 @@ menuItems.forEach((item) => {
       ).style.display = "none";
     }
   });
+});
+
+// ========== Message Notification ==========
+messagesNotification.addEventListener("click", () => {
+  messages.style.boxShadow = "0 0 1rem var(--color-primary)";
+  messagesNotification.querySelector(".notification-count").style.display =
+    "none";
+  setTimeout(() => {
+    messages.style.boxShadow = "none";
+  }, 1500);
 });
