@@ -4,6 +4,10 @@ const menuItems = document.querySelectorAll(".menu-item");
 // Messages
 const messagesNotification = document.querySelector("#messages-notifications");
 const messages = document.querySelector(".messages");
+const message = document.querySelectorAll(".message");
+const messageSearch = document.querySelector("#message-search");
+
+//Theme
 
 // ========== SIDEBAR ==========
 // remove active class from all menu items
@@ -27,6 +31,22 @@ menuItems.forEach((item) => {
     }
   });
 });
+
+// ========== Messages ==========
+const searchMessage = () => {
+  const val = messageSearch.value.toLowerCase();
+  message.forEach((chat) => {
+    let name = chat.querySelectorAll("h5").textContent.toLowerCase();
+    if (name.indexOf(val) != -1) {
+      chat.style.display = "flex";
+    } else {
+      chat.style.display = "none";
+    }
+  });
+};
+
+// Search chat
+messageSearch.addEventListener("keyup", searchMessage);
 
 // ========== Message Notification ==========
 messagesNotification.addEventListener("click", () => {
