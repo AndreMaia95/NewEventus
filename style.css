@@ -502,3 +502,84 @@ main .container .left .profile {
   bottom: 0;
   right: 0;
 }
+
+/*------------- Friend Requests -------------*/
+.right .friend-requests {
+  margin-top: 1rem;
+}
+
+.right .friend-requests h4 {
+  color: var(--color-gray);
+  margin: 1rem 0;
+}
+
+.right .request {
+  background: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  margin-bottom: 0.7rem;
+}
+
+.right .request .info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*------------- Theme Customization -------------*/
+.customize-theme {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 100;
+  display: grid;
+  text-align: center;
+  place-items: center;
+  font-size: 0.9rem;
+}
+
+.customize-theme .card {
+  background: var(--color-white);
+  padding: 3rem;
+  border-radius: var(--card-border-radius);
+  width: 50%;
+}
+
+/*------------- Font Size -------------*/
+.customize-theme .font-size {
+  margin-top: 5rem;
+}
+
+.customize-theme .font-size > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-light);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+}
+
+.customize-theme .choose-size {
+  background: var(--color-secondary);
+  height: 0.3rem;
+  width: 100%;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customize-theme .choose-size span {
+  width: 1rem;
+  height: 1rem;
+  background: var(--color-secondary);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.customize-theme .choose-size span.active {
+  background: var(--color-primary);
+}
